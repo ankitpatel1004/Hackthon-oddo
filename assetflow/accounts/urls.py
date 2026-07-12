@@ -4,6 +4,8 @@ from django.urls import path
 from accounts.views import *
 
 urlpatterns = [
+    path("",home,name="home"),
+    path("base",base,name="base"),
     path("login",user_login,name="login"),
     path("signup",user_signup,name="signup"),
     path('forgotpassword',forgot_password,name="forgotpassword"),
